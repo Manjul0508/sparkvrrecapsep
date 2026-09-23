@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SparkVR — Growth Recap | September 20, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400..800&display=swap" rel="stylesheet">
+  <style>
+    :root{--blue:#1565F8;--blue2:#4D8BFF;--blue3:#EAF2FF;--ink:#0E1728;--muted:#677287;--line:#DCE5F3;--bg:#F7FAFF;--white:#fff;--green:#159A67;--shadow:0 14px 45px rgba(22,74,153,.10)}
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+    body{font-family:"Google Sans Flex",Arial,sans-serif;background:radial-gradient(circle at 84% 6%,rgba(77,139,255,.13),transparent 24%),linear-gradient(180deg,#F9FBFF 0%,#F5F8FD 100%);color:var(--ink);-webkit-font-smoothing:antialiased}
+    .page{width:min(1180px,92%);margin:0 auto;padding:34px 0 56px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.brand{font-size:20px;font-weight:760;letter-spacing:-.8px}.brand span{color:var(--blue)}
+    .period{text-align:right}.period .eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:1.6px;color:var(--muted);font-weight:700;margin-bottom:3px}.period strong{font-size:12px;font-weight:650}
+    .hero{position:relative;overflow:hidden;min-height:425px;background:linear-gradient(135deg,#0B63F6 0%,#2C7BFF 52%,#4D8BFF 100%);border-radius:32px;padding:48px;display:flex;align-items:flex-end;box-shadow:0 24px 60px rgba(21,101,248,.22);margin-bottom:16px}
+    .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(255,255,255,.18),transparent 20%),radial-gradient(circle at 70% 90%,rgba(255,255,255,.09),transparent 28%);pointer-events:none}
+    .gridlines{position:absolute;inset:0;opacity:.12;background-image:linear-gradient(rgba(255,255,255,.75) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.75) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(135deg,rgba(0,0,0,.7),transparent 82%)}
+    .orbit{position:absolute;width:470px;height:470px;border:1px solid rgba(255,255,255,.20);border-radius:50%;right:-120px;top:-155px}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.14);border-radius:50%}.orbit:before{inset:58px}.orbit:after{inset:125px}
+    .hero-copy{position:relative;z-index:2;max-width:770px;color:#fff}.hero-kicker{font-size:10px;text-transform:uppercase;letter-spacing:2px;font-weight:720;color:rgba(255,255,255,.78);margin-bottom:14px}
+    .hero h1{font-size:clamp(42px,7vw,76px);line-height:.94;letter-spacing:-4.4px;font-weight:760;margin-bottom:22px}.hero h1 span{color:#DCEAFF}.hero p{max-width:670px;color:rgba(255,255,255,.86);font-size:14px;line-height:1.68}
+    .section{margin-top:16px}.section-head{padding:26px 4px 16px;display:flex;justify-content:space-between;align-items:end;gap:20px}.section-head .eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:1.8px;font-weight:750;color:var(--blue);margin-bottom:6px}.section-head h2{font-size:32px;letter-spacing:-1.6px;line-height:1.05}.section-head p{max-width:560px;color:var(--muted);font-size:11.5px;line-height:1.55}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow);min-height:144px}.stat.blue{background:linear-gradient(180deg,#EFF5FF 0%,#E4EEFF 100%);border-color:#CFE0FF}.stat-label{color:var(--muted);font-size:10.5px;line-height:1.45;margin-top:11px}.stat-number{font-size:45px;line-height:.96;font-weight:760;letter-spacing:-2.7px}.stat.blue .stat-number{color:var(--blue)}
+    .feature-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:12px}.card{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:29px;box-shadow:var(--shadow)}.card h3{font-size:18px;letter-spacing:-.6px;margin-bottom:6px}.sub{color:var(--muted);font-size:10.5px;line-height:1.55;margin-bottom:20px}
+    .meta{background:linear-gradient(155deg,#0D53CD 0%,#1269F8 58%,#2B7BFF 100%);color:#fff;border:none;overflow:hidden;position:relative}.meta:after{content:"";position:absolute;width:330px;height:330px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-150px;bottom:-160px}.meta .sub{color:rgba(255,255,255,.78)}
+    .meta-row{display:flex;align-items:end;justify-content:space-between;gap:20px;position:relative;z-index:2}.meta-number{font-size:72px;line-height:.92;font-weight:780;letter-spacing:-4px}.meta-number small{font-size:17px;letter-spacing:-.4px;font-weight:650}.meta-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.14);padding:7px 10px;border-radius:999px;font-size:9.5px;font-weight:650;margin-top:16px}.dot{width:6px;height:6px;border-radius:50%;background:#66E0AB;box-shadow:0 0 0 4px rgba(102,224,171,.12)}
+    .meta-points{margin-top:24px;display:grid;gap:9px;position:relative;z-index:2}.meta-point{display:flex;gap:9px;align-items:flex-start;font-size:10px;line-height:1.5;color:rgba(255,255,255,.86)}.check{width:17px;height:17px;border-radius:50%;display:grid;place-items:center;flex:0 0 17px;background:rgba(255,255,255,.13);font-size:9px;margin-top:1px}
+    .seo{position:relative;overflow:hidden}.seo-top{display:flex;justify-content:space-between;gap:18px;align-items:start}.seo-icon{width:44px;height:44px;border-radius:14px;background:var(--blue3);border:1px solid #D7E7FF;display:grid;place-items:center;color:var(--blue);font-weight:800;font-size:18px;flex:0 0 44px}.seo-list{display:grid;gap:10px;margin-top:18px}.seo-item{display:flex;justify-content:space-between;gap:14px;align-items:center;border:1px solid #E5ECF6;background:#FBFCFF;border-radius:14px;padding:11px 13px}.seo-item .keyword{font-size:10.5px;font-weight:640}.seo-item .result{font-size:9px;font-weight:720;color:var(--blue);background:var(--blue3);padding:6px 8px;border-radius:999px;white-space:nowrap}.seo-note{margin-top:14px;padding:12px 13px;border-radius:14px;background:#F5F8FD;color:var(--muted);font-size:9.5px;line-height:1.5}
+    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.work{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.work-num{font-size:9px;color:var(--blue);font-weight:750;letter-spacing:1.4px;margin-bottom:19px}.work h4{font-size:13px;margin-bottom:7px}.work p{font-size:10px;line-height:1.6;color:var(--muted)}.work .mini{display:inline-block;margin-top:13px;padding:5px 8px;border-radius:999px;background:var(--blue3);color:var(--blue);font-size:8.5px;font-weight:700}
+    .impact{background:#0F1728;color:#fff;border-radius:25px;padding:29px;box-shadow:0 18px 50px rgba(15,23,40,.15)}.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.impact-item{padding-right:16px;border-right:1px solid rgba(255,255,255,.12)}.impact-item:last-child{border-right:none}.impact-label{color:#95A2B8;font-size:9px;text-transform:uppercase;letter-spacing:1.2px;font-weight:700;margin-bottom:10px}.impact h4{font-size:16px;letter-spacing:-.4px;margin-bottom:5px}.impact p{color:#B7C0CF;font-size:10px;line-height:1.55}
+    .closure{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;background:linear-gradient(180deg,#FFFFFF 0%,#F7FAFF 100%);border:1px solid var(--line);border-radius:26px;padding:30px;box-shadow:var(--shadow)}.closure .eyebrow{font-size:9px;text-transform:uppercase;letter-spacing:1.7px;font-weight:750;color:var(--blue);margin-bottom:7px}.closure h2{font-size:29px;letter-spacing:-1.5px;line-height:1.04;margin-bottom:10px}.closure p{color:var(--muted);font-size:10.5px;line-height:1.65;max-width:650px}.handover{background:#F2F6FC;border:1px solid #E1EAF7;border-radius:18px;padding:20px}.handover h4{font-size:11px;margin-bottom:12px}.handover ul{list-style:none;display:grid;gap:8px}.handover li{font-size:9.7px;line-height:1.4;color:var(--muted);display:flex;gap:8px;align-items:flex-start}.handover li:before{content:"✓";color:var(--green);font-weight:800}
+    .footer{display:flex;justify-content:space-between;padding:22px 3px 0;color:#8993A5;font-size:8.8px}.footer strong{color:#42506A}
+    .reveal{opacity:0;transform:translateY(14px);animation:reveal .7s ease forwards}.d1{animation-delay:.08s}.d2{animation-delay:.16s}.d3{animation-delay:.24s}@keyframes reveal{to{opacity:1;transform:none}}
+    @media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:1fr}.work-grid{grid-template-columns:1fr}.impact-grid{grid-template-columns:1fr;gap:16px}.impact-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:15px}.impact-item:last-child{border-bottom:none;padding-bottom:0}.closure{grid-template-columns:1fr}}
+    @media(max-width:560px){.page{width:92%;padding-top:22px}.topbar{align-items:flex-start}.hero{min-height:445px;padding:31px 27px;border-radius:25px}.hero h1{letter-spacing:-3px}.section-head{display:block}.section-head p{margin-top:9px}.stats{grid-template-columns:1fr 1fr}.stat{min-height:124px;padding:20px 17px}.stat-number{font-size:34px}.card{padding:24px}.meta-number{font-size:61px}.seo-top{align-items:flex-start}.closure{padding:24px}.footer{flex-direction:column;gap:6px}}
+    @media print{body{background:#fff}.page{width:100%;padding:16px}.hero,.card,.stat,.work,.closure,.impact{break-inside:avoid}}
+  </style>
+</head>
+<body>
+<main class="page">
+  <header class="topbar reveal">
+    <div class="brand">Spark<span>VR</span></div>
+    <div class="period"><div class="eyebrow">Growth Recap</div><strong>Up to September 20, 2026</strong></div>
+  </header>
+
+  <section class="hero reveal d1">
+    <div class="gridlines"></div><div class="orbit"></div>
+    <div class="hero-copy">
+      <div class="hero-kicker">Content · Meta Ads · SEO</div>
+      <h1>More visibility.<br><span>More discovery.</span></h1>
+      <p>This period focused on strengthening SparkVR’s digital presence through search visibility, paid lead generation and consistent content execution — creating a stronger foundation for reaching schools and education decision-makers.</p>
+    </div>
+  </section>
+
+  <section class="section reveal d2">
+    <div class="section-head"><div><div class="eyebrow">01 · Growth snapshot</div><h2>The numbers that mattered.</h2></div><p>Organic search and paid acquisition were the key growth levers, supported by a consistent content pipeline.</p></div>
+    <div class="stats">
+      <div class="stat"><div class="stat-number counter" data-target="20">0</div><div class="stat-label">Creative posts delivered</div></div>
+      <div class="stat"><div class="stat-number counter" data-target="6">0</div><div class="stat-label">Approved reels delivered</div></div>
+      <div class="stat blue"><div class="stat-number">20+</div><div class="stat-label">Leads generated through Meta Ads campaigns</div></div>
+      <div class="stat blue"><div class="stat-number">SEO</div><div class="stat-label">High rankings achieved across multiple target keywords</div></div>
+    </div>
+  </section>
+
+  <section class="section reveal d3">
+    <div class="section-head"><div><div class="eyebrow">02 · Performance marketing</div><h2>Paid + organic growth.</h2></div><p>Meta Ads created measurable enquiries while SEO increased the opportunity for schools already searching for relevant solutions.</p></div>
+    <div class="feature-grid">
+      <article class="card meta">
+        <h3>Meta Ads — Lead Generation</h3>
+        <div class="sub">Multiple campaigns were planned, launched and optimized during the period, with lead generation as the core objective.</div>
+        <div class="meta-row"><div><div class="meta-number">20<small>+</small></div><div class="meta-label">Leads generated</div></div><div class="meta-tag"><span class="dot"></span> Multiple campaigns</div></div>
+        <div class="meta-points">
+          <div class="meta-point"><span class="check">✓</span><span>Campaign setup and ongoing management across lead-generation initiatives.</span></div>
+          <div class="meta-point"><span class="check">✓</span><span>Audience and detailed-targeting adjustments to improve lead relevance.</span></div>
+          <div class="meta-point"><span class="check">✓</span><span>Creative-led testing to connect SparkVR’s school value proposition with prospects.</span></div>
+          <div class="meta-point"><span class="check">✓</span><span>Lead-generation activity used alongside organic content to create measurable demand.</span></div>
+        </div>
+      </article>
+
+      <article class="card seo">
+        <div class="seo-top"><div><h3>SEO — Search Visibility</h3><div class="sub">Search optimization was a major focus, improving SparkVR’s visibility across multiple education and VR-related search terms.</div></div><div class="seo-icon">⌕</div></div>
+        <div class="seo-list">
+          <div class="seo-item"><div class="keyword">Target keyword visibility</div><div class="result">High ranking</div></div>
+          <div class="seo-item"><div class="keyword">VR learning / school searches</div><div class="result">Improved</div></div>
+          <div class="seo-item"><div class="keyword">On-page SEO elements</div><div class="result">Optimized</div></div>
+          <div class="seo-item"><div class="keyword">Content + internal linking</div><div class="result">Strengthened</div></div>
+        </div>
+        <div class="seo-note">The period included keyword-focused optimization, metadata improvements, content/blog work and internal-linking support to strengthen organic discovery.</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head"><div><div class="eyebrow">03 · Supporting execution</div><h2>Content that backed the growth engine.</h2></div><p>Creative production supported both brand visibility and paid campaign communication.</p></div>
+    <div class="work-grid">
+      <article class="work"><div class="work-num">CONTENT</div><h4>20 Creative Posts</h4><p>Developed and delivered content around SparkVR, school value, educational innovation, product experience and decision-maker communication.</p><span class="mini">20 delivered</span></article>
+      <article class="work"><div class="work-num">VIDEO</div><h4>6 Approved Reels</h4><p>Produced short-form video for stronger visual storytelling. Additional reel concepts/videos were also developed; only approved outputs are included in the headline count.</p><span class="mini">6 delivered</span></article>
+      <article class="work"><div class="work-num">POSITIONING</div><h4>School-Focused Messaging</h4><p>Communication increasingly moved from “VR is exciting” toward why SparkVR matters to schools, principals, owners and education management.</p><span class="mini">Decision-maker focus</span></article>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="section-head"><div><div class="eyebrow">04 · What the work created</div><h2>Three growth outcomes.</h2></div></div>
+    <div class="impact"><div class="impact-grid">
+      <div class="impact-item"><div class="impact-label">01 · Discovery</div><h4>Stronger organic visibility</h4><p>SEO activity improved SparkVR’s presence across multiple target keywords and helped build a stronger search-discovery channel.</p></div>
+      <div class="impact-item"><div class="impact-label">02 · Acquisition</div><h4>Measurable lead generation</h4><p>Meta Ads added a direct acquisition layer, producing 20+ leads during the reporting period.</p></div>
+      <div class="impact-item"><div class="impact-label">03 · Brand</div><h4>More consistent communication</h4><p>Regular creative and video production helped maintain SparkVR’s digital presence and support the broader growth strategy.</p></div>
+    </div></div>
+  </section>
+
+  <section class="section reveal">
+    <div class="closure">
+      <div><div class="eyebrow">05 · Engagement closure</div><h2>Concluding the engagement with a smooth handover.</h2><p>With the current services coming to an end, the focus will be on making the transition clear and organized. We will help revoke or transfer the relevant access and share the updated work, assets and information completed up to the engagement date.</p></div>
+      <div class="handover"><h4>Handover support</h4><ul><li>Assist with revoking or transferring relevant account access</li><li>Share updated work completed till September 20</li><li>Provide relevant creative and campaign information</li><li>Ensure a clear and organized transition</li></ul></div>
+    </div>
+  </section>
+
+  <footer class="footer"><div><strong>SparkVR</strong> · Growth & Marketing Recap</div><div>Prepared through September 20, 2026</div></footer>
+</main>
+<script>
+  const counters=document.querySelectorAll('.counter');
+  const animateCounter=(el)=>{const target=Number(el.dataset.target),duration=950,start=performance.now();const frame=(time)=>{const progress=Math.min((time-start)/duration,1),eased=1-Math.pow(1-progress,3);el.textContent=Math.floor(target*eased);if(progress<1)requestAnimationFrame(frame);else el.textContent=target};requestAnimationFrame(frame)};
+  const observer=new IntersectionObserver((entries,obs)=>{entries.forEach(entry=>{if(!entry.isIntersecting)return;if(entry.target.classList.contains('counter'))animateCounter(entry.target);obs.unobserve(entry.target)})},{threshold:.55});
+  counters.forEach(c=>observer.observe(c));
+</script>
+</body>
+</html>
